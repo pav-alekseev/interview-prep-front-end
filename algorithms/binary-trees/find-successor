@@ -1,0 +1,39 @@
+class BinaryTree {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+    this.parent = null;
+  }
+}
+
+function findSuccessor(tree, node) {
+  let successor = null;
+  let foundNode = false;
+  
+  const iter = (currentNode, side) => {
+    if (!currenNode) {
+      return;
+    }
+
+    if (currentNode === node) {
+      foundNode = true;
+
+      iter(currentNode.right, 'right');
+      return;
+    }
+    
+    iter(currentNode.left, 'left');
+
+    if (foundNode && !successor) {
+      successor = currentNode;
+      return;
+    }
+    
+    iter(currentNode.right, 'right');
+  }
+
+  iter(tree);
+
+  return successor;
+}
