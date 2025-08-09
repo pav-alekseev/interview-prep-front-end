@@ -5,4 +5,4 @@ This repository contains my personal preparation material for front-end intervie
 ## Contents
 
 - `algorithms/`: JavaScript solutions to classic coding problems.
-- `system-design/`: Front-end specific architecture and scalability notes.
+- `js-functions`: the most popular JavaScript functions written by me
